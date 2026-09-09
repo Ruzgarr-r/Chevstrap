@@ -28,7 +28,7 @@ jobs:
         run: chmod +x ./gradlew
 
       - name: Build Project
-        run: ./gradlew :app:assemble
+        run: ./gradlew :app:build
 
       - name: Find Created Build Artifacts
         run: find . -maxdepth 5 -type f \( -name "*.apk" -o -name "*.jar" \)
