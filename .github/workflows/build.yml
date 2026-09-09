@@ -27,6 +27,12 @@ jobs:
       - name: Make Gradle executable
         run: chmod +x ./gradlew
 
+      - name: Inspect Project Structure
+        run: |
+          ./gradlew projects
+          ls -la
+
+
       - name: Build Project
         run: ./gradlew :app:build
 
